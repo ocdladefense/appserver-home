@@ -1,0 +1,17 @@
+{
+	"comment": "Module definition file.",
+	"name": "home",
+	"description": "Provide standard home links.",
+	"files": [],
+	"routes": {
+		"home": {
+			"callback":"homepage",
+			"content-type":"text/html",
+			"files": ["Homepage.php"]
+		},
+		"install": {
+			"callback":"install",
+			"content-type":"text/html"
+		}
+	}
+}
