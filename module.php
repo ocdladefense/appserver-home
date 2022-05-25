@@ -82,64 +82,27 @@ class HomeModule extends Module {
 
 
 	public function __construct(){
-			parent::__construct();
+		parent::__construct();
 
-			$this->name = "home";
-			
-			$this->files = array();
+		$this->name = "home";
+		
+		$this->files = array();
 	}
 		
 	public function indexInfo($itemId) {
 		return "<h2>Info for {$itemId}</h2><p>Some information retrieved for this entity.</p>";
 	}
 		
+		
+
+		
 	function homepage() {
 
-			$content = '<ul class="main-menu home-menu">
-				<li class="home-menu-item"><a href="/home"><i class="fas fa-home fa-2x" aria-hidden="true"></i>home</a></li>
-
-				<li class="home-menu-item"><a href="/jobs"><i class="fas fa-briefcase" aria-hidden="true"></i>jobs</a></li>
-				
-				<li class="home-menu-item"><a href="/car/list"><i class="fas fa-database fa-2x" aria-hidden="true"></i>case reviews</a></li>
-				
-				<li class="home-menu-item"><a href="https://www.ocdla.org/contact-us/" target="_new"><i class="fas fa-mobile-alt fa-2x" aria-hidden="true"></i>contact us</a></li>
-				
-				
-				<!-- COMMENTED OUT TO HIDE INACTIVE MENU ITEMS -->
-				<!-- 
-				<li class="home-menu-item">
-					<i class="fas fa-people-arrows fa-2x"></i>
-					<a href="/covid" title="How OCDLA is pivoting to meet COVID-19 challenges.">covid-19</a>
-				</li>
-			
-				<li class="home-menu-item"><i class="fas fa-scroll"></i><a href="/documents" title="OCDLA motion bank">motion bank</a></li>
-			
-				<li class="home-menu-item"><i class="fas fa-book-open"></i><a href="/user/documents" title="Read your publications">my publications</a></li>
-			
-				<li class="home-menu-item"><i class="fas fa-calendar-day fa-2x" aria-hidden="true"></i><a href="/event/list">events</a></li>
-			
-
-			
-
-			
-				<li class="home-menu-item"><i class="fas fa-map-pin fa-2x" aria-hidden="true"></i><a href="/maps">maps</a></li>
-			
-				<li class="home-menu-item"><i class="fas fa-video fa-2x" aria-hidden="true"></i><a href="/videos">videos</a></li>
-			
-				<li class="home-menu-item"><i class="fas fa-user-friends fa-2x" aria-hidden="true"></i><a href="/directory">members/experts</a></li>
-			
-				<li class="home-menu-item"><i class="fas fa-comment-dots fa-2x" aria-hidden="true"></i><a href="/feedback">feedback</a></li>
-				
-				-->
-				<!-- END OF COMMENTED OUT MENU ITEMS -->
-			
-			</ul>
-			
-			<script> document.body.classList.add("is-home");</script>';
-			
-			// $content .= '<div id="installBanner"><img id="btnAdd" src="/content/images/download.png" /></div>';
+		$tpl = new Template("home");
+		$tpl->addPath(__DIR__ . "/templates");
+		// $tpl->bind("firstName","José");
 		
-			return $content;
+		return $tpl;
 	}
 	
 	
