@@ -1,14 +1,11 @@
 {
-    "name": "trevor-uehlin/test-module",
-    "description": "A module for testing the appserver functionality",
+    "name": "ocdladefense/appserver-home",
+    "description": "A module for displaying a home screen.",
     "type": "wordpress-theme",
     "authors": [
         {
-            "name": "Trevor Uehlin",
-            "email": "uehlin.trevor@gmail.com"
+            "name": "José Bernal",
+            "email": "jbernal.web.dev@gmail.com"
         }
-    ],
-    "require": {
-        "composer/installers":"~1.0"
-    }
+    ]
 }
