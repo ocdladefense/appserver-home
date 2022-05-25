@@ -14,6 +14,8 @@
 
     .narrate h1 {
         margin-bottom: 20px;
+        font-size: 2.0em;
+        line-height: 1.2em;
     }
 </style>
 <!--
@@ -40,23 +42,61 @@
 </nav>
 -->
 
+<style type="text/css">
+    .home-menu {
+        margin: 0 auto;
+    }
+    #stage-content {
+        width: auto;
+        text-align:center;
+    }
+    .home-menu li {
+        list-style-type: none;
+        padding: 40px;
+    }
 
+    .home-menu li i {
+        font-size: 5.0em;
+        display: block;
+        color: hsl(300,0%,47%);
+    }
+
+    .home-menu-item {
+
+    }
+
+    .nt {
+        font-size: 2.0em;
+        line-height: 1.3em;
+    }
+</style>
 
 <ul class="main-menu home-menu">
+    <!-- <li class="home-menu-item">
+        <a href="/home"><i class="fas fa-home fa-2x" aria-hidden="true"></i>
+        <span class="nt">home</span></a>
+    </li>-->
+
     <li class="home-menu-item">
-        <a href="/home"><i class="fas fa-home fa-2x" aria-hidden="true"></i>home</a>
+        <a href="/jobs"><i class="fas fa-briefcase fa-2x" aria-hidden="true"></i>
+        <span class="nt">jobs</span></a>
     </li>
 
     <li class="home-menu-item">
-        <a href="/jobs"><i class="fas fa-briefcase" aria-hidden="true"></i>jobs</a>
+        <a href="/directory/members"><i class="fas fa-user-friends fa-2x" aria-hidden="true"></i>
+        <span class="nt">people</span></a>
+    </li>
+
+    
+
+    <li class="home-menu-item">
+        <a href="/car/list"><i class="fas fa-database fa-2x" aria-hidden="true"></i>
+        <span class="nt">case reviews</span></a>
     </li>
 
     <li class="home-menu-item">
-        <a href="/car/list"><i class="fas fa-database fa-2x" aria-hidden="true"></i>case reviews</a>
-    </li>
-
-    <li class="home-menu-item">
-        <a href="https://www.ocdla.org/contact-us/" target="_new"><i class="fas fa-mobile-alt fa-2x" aria-hidden="true"></i>contact us</a>
+        <a href="https://www.ocdla.org/contact-us/" target="_new"><i class="fas fa-mobile-alt fa-2x" aria-hidden="true"></i>
+        <span class="nt">contact us</span></a>
     </li>
 
 
