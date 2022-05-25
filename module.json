@@ -8,10 +8,6 @@
 			"callback":"homepage",
 			"content-type":"text/html",
 			"files": ["Homepage.php"]
-		},
-		"install": {
-			"callback":"install",
-			"content-type":"text/html"
 		}
 	}
 }
