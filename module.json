@@ -3,6 +3,11 @@
 	"name": "home",
 	"description": "Provide standard home links.",
 	"files": [],
+	"links":[
+		{
+		"href":"const:STORE_URL",
+		"label": "Store"
+	}],
 	"routes": {
 		"home": {
 			"callback":"homepage",
